@@ -46,6 +46,11 @@
      - 专题六：二次型化标准形与正定性判定
 3. **统计失分大数据**：
    汇总各模块的错题数量、失分总和、以及最高频的错因分布（概念模糊、方法想不到、计算失误、审题马虎）。
+4. **自动化脚本支持（Skill 内置工具箱）**：
+   在生成大批量阶段错题重做卷与统计分析时，可直接调用本 Skill 内置的 Python 自动化脚本（位于 `scripts/` 与 `assets/` 目录下）：
+   - `python .agents/skills/kaoyan-math2-grader/scripts/generate_pure_question_paper.py`：一键自动扫描 `错题/` 目录并快速生成纯题目重做卷；
+   - `python .agents/skills/kaoyan-math2-grader/scripts/generate_statistics.py`：一键汇总失分结构大数据；
+   - `python .agents/skills/kaoyan-math2-grader/scripts/export_to_pdf.py`：结合内置的 `assets/` 离线 KaTeX 排版引擎，将生成的 Markdown 试卷导出为排版精美的打印版 PDF。
 
 ---
 
